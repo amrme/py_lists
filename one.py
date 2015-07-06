@@ -25,6 +25,6 @@ for line in fh:
 
 
       
+sorted_list = sorted(lst)
 
-print lst   
-print lst.sort()
+print sorted_list
