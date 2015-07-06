@@ -10,7 +10,8 @@ for line in fh:
 	words = line.split()
 
 	for word in words:
-		if word is not "From: ":  
+		print words[0]
+		if words[0] != "From: ":  
 			continue
 
 		count += 1
