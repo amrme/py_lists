@@ -9,15 +9,22 @@
 fh = open("./romeo.txt")
 lst = list()
 
-
 for line in fh:
     # split line
     listed_line = line.split()
+    # print listed_line
     for word in listed_line:
-        if word in listed_line: 
-            continue
+    	# print word
+      	if word in lst: 
+      		# print "yuo"
+      		continue
+
     	lst.append(word)
+    	# print "appended"
+    	# print lst
+
+
       
-sorted_list = lst.sort()
-    
-print sorted_list
+
+print lst   
+print lst.sort()
