@@ -10,11 +10,11 @@ for line in fh:
 	words = line.split()
 
 	for word in words:
-		print words[0]
-		if words[0] != "From: ":  
+		# print words[0]
+		if word != "From" or word == "From:":  
 			continue
 
 		count += 1
-		print words[2]
+		print words[1]
 
 print "There were", count, "lines in the file with From as the first word"
